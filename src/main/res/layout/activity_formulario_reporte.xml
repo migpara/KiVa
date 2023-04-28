@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A1F7F1"
+        android:padding="16dp">
+
+        <!-- Título del formulario -->
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+
+            android:padding="16dp"
+            android:text="KiVa"
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/txtProblema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitulo"
+            android:fontFamily="@font/audiowide"
+            android:padding="16dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#0C0C0C"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextQueHaPasado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProblema"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#00E5FF"
+            android:hint="¿Qué ha pasado exactamente?"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextQuienNecesitaAyuda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextQueHaPasado"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#00E5FF"
+            android:hint="Quién necesita ayuda?"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextDondeCuando"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextQuienNecesitaAyuda"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#00E5FF"
+            android:hint="Dónde y cuándo ha ocurrido o va a ocurrir?"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextQuienLoHaHecho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDondeCuando"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#00E5FF"
+            android:hint="Quién lo ha hecho?"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button_select_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextQuienLoHaHecho"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:padding="16dp"
+            android:text="Insertar imágenes como prueba"
+            android:textColor="#00E5FF" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_select_image"
+            android:adjustViewBounds="true" />
+
+        <Button
+            android:id="@+id/button_submit_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="29dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Enviar formulario"
+            android:textColor="#00E5FF" />
+
+        <ImageButton
+            android:id="@+id/btnAtras2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_submit_form"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="20dp"
+            android:background="#A1F7F1"
+            app:srcCompat="@drawable/atras" />
+
+
+    </RelativeLayout>
+</ScrollView>

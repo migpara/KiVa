@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#A1F7F1">
+
+
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/audiowide"
+        android:text="KiVa"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/subtituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="¿Que quieres reportar?"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:stretchColumns="*">
+
+
+        <TableRow android:layout_height="48dp">
+
+            <TextView
+                android:id="@+id/fila1"
+                android:layout_width="16dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="8dp"
+                android:paddingTop="15dp"
+                android:text="Abuso-Verbal o Fisico"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/fila2"
+            android:layout_width="16dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClickFila"
+            android:paddingStart="8dp"
+            android:paddingTop="15dp"
+            android:text="Ataque de ansidedad"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/fila3"
+                android:layout_width="16dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClickFila"
+                android:paddingStart="8dp"
+                android:paddingTop="15dp"
+                android:text="Posible caso de depresión"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/fila4"
+                android:layout_width="16dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClickFila"
+                android:paddingStart="8dp"
+                android:paddingTop="15dp"
+                android:text="Violencia en relaciones intimas"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/fila5"
+                android:layout_width="16dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClickFila"
+                android:paddingStart="8dp"
+                android:paddingTop="15dp"
+                android:text="Bullying / Cyberbullying"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/fila6"
+                android:layout_width="16dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClickFila"
+                android:paddingStart="8dp"
+                android:paddingTop="15dp"
+                android:text="Posesión de drogas o alcohol"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/fila7"
+                android:layout_width="16dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClickFila"
+                android:paddingStart="8dp"
+                android:paddingTop="15dp"
+                android:text="Distribución de images inapropiadas"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/fila8"
+                android:layout_width="16dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClickFila"
+                android:paddingStart="8dp"
+                android:paddingTop="15dp"
+                android:text="Otros"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/imgAtras"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:layout_marginLeft="150dp"
+        android:background="#A1F7F1"
+        app:srcCompat="@drawable/atras" />
+
+</LinearLayout>
+
+
+
